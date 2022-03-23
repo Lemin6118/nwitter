@@ -4,10 +4,12 @@
 
 ### 로컬PC에서 push
 $ git config --global user.email "Lemin6118@email.daelim.ac.kr"
+
 $ git config --global user.name "Lee MinSeok"
 
 ### 확인방법
 git config user.name
+
 git config user.email.
 
 ### firebase import 
