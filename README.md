@@ -22,8 +22,8 @@ reportWebVitals();
 ### App.js 불필요 코드 삭제
 import logo from "./logo.svg";   
 import "./App.css";   
-return{~~~~ 내용 삭제 후 <div>App</div> 만 추가  
- 
+return{~~~~ 내용 삭제 후 '<div>App</div>' 만 추가  
+
 ### firebase import 
 책이랑 다름 9.0 이상일 경우의 import 방식
 import firebase from 'firebase/compat/app';   
