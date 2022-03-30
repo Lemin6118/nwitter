@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+
+// 9버전 이상부터는 사용불가
+// import firebase from './firebase';
 import firebase from 'firebase/compat/app'; 
 import 'firebase/compat/auth'; 
 import 'firebase/compat/firestore';

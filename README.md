@@ -1,5 +1,17 @@
 # 이민석
 
+[3월 30일]
+
+### firebase import 
+책이랑 다름 9.0 이상일 경우의 import 방식
+import firebase from 'firebase/compat/app';   
+import 'firebase/compat/auth';    
+import 'firebase/compat/firestore';   
+
+### 비밀키 설정
+.env 로 firebase.js의 비밀키 이동 및 매핑
+REACT_APP_을 붙여야 CRA로 만든 파일 환경 변수에 정의가 가능 
+
 [03월 23일]
 
 ### 로컬PC에서 push
@@ -23,9 +35,3 @@ reportWebVitals();
 import logo from "./logo.svg";   
 import "./App.css";   
 return{~~~~ 내용 삭제 후 "\<div\>App\</div\>" 만 추가  
-
-### firebase import 
-책이랑 다름 9.0 이상일 경우의 import 방식
-import firebase from 'firebase/compat/app';   
-import 'firebase/compat/auth';    
-import 'firebase/compat/firestore';   
