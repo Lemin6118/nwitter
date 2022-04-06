@@ -1,6 +1,9 @@
 # 이민석
 [4월 06일]
 
+### Router 문제 해결
+ npm audit fix --force
+
 ### App.js Router import 문제
 
 // import AppRouter from "./Router";  
