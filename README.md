@@ -1,8 +1,16 @@
 # 이민석
 [4월 06일]
 
+### export 'authService' (imported as 'authService') was not found in 'fbase' 
+fbase.js밑에 export   
+
+### fbase 변경후 에러
+import firebase from 'firebase/compat/app' 주석   
+import 'firebase/compat/auth' 추가   
+
 ### Router 문제 해결
- npm audit fix --force
+react-scripts start" 에서 --openssl-legacy-provider   
+npm audit fix --force
 
 ### App.js Router import 문제
 
