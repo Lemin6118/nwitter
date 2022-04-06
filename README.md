@@ -1,4 +1,11 @@
 # 이민석
+[4월 06일]
+
+### App.js Router import 문제
+
+// import AppRouter from "./Router";
+import AppRouter from "components/Router"
+-> 경로를 설정하지 않으면 문제가 발생하여 경로 지정
 
 [3월 30일]
 
