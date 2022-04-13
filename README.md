@@ -1,4 +1,12 @@
 # 이민석
+[4월 14일]
+### firebase와 git 연동 
+firebase에서 이메일, google, Github 등록   
+이메일 = 추후 로그인에 사용할 이메일 및 비밀번호   
+Google = 자동 연동 관련   
+Git    = (OAuth) 승인된 도메인에서 ~~firebaseapp.com와 승인 콜백을 firebase로부터 가져오고   
+         클라이언트 ID PW를 firebase로 보내도록 설정    
+
 [4월 06일]
 
 ### export 'authService' (imported as 'authService') was not found in 'fbase' 
