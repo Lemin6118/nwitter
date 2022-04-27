@@ -2,17 +2,17 @@
 
 [4월 27일]   
 
-### 딜레이 
-setInterval()   
-
-### useEffect
-파이어베이스 로그인 정보를 받게 되었을 때, 실행되는 함수
-
-### 회원가입 firebase 연동
-setNewAccount()
-
 ### 로컬 유의사항
 Path 설정 및 로컬 설정 확인 후 작업 할 것   
+
+### 회원가입 firebase 연동
+setNewAccount()   
+
+### useEffect
+파이어베이스 로그인 정보를 받게 되었을 때, 실행되는 함수   
+
+### 딜레이 
+setInterval()   
 
 [4월 14일]
 ### firebase와 git 연동 
