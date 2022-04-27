@@ -1,4 +1,14 @@
 # 이민석
+
+[4월 27일]   
+
+### 딜레이 
+setInterval()   
+
+### useEffect
+파이어베이스 로그인 정보를 받게 되었을 때, 실행되는 함수
+
+
 [4월 14일]
 ### firebase와 git 연동 
 firebase에서 이메일, google, Github 등록   
