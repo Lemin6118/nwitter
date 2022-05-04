@@ -1,4 +1,8 @@
 # 이민석
+[5월 4일]   
+
+### Navigation 추가
+routes 폴더에 Navigation.js 파일 생성 및 router.js에 export 처리
 
 [4월 27일]   
 
