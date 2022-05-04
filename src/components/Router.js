@@ -11,7 +11,7 @@ const AppRouter = ({isLoggedIn}) => {
     return(
         <Router>
             <Routes>
-                {isLoggedIn ? (
+                {isLoggedIn && Navigation ? (
                     <Route path="/" element={<Auth/>}>
                     </Route>
                 ) : (
