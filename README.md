@@ -1,5 +1,9 @@
-# 이민석
+# 이민석a
 [5월 4일]   
+### Profile.js 코드 추가
+
+### Home.js 코드 추가
+home 접근 시 보이는 부분에 대하여 코드 추가
 ### Navigation 추가
 routes 폴더에 Navigation.js 파일 생성 및 router.js에 export 처리
 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
