@@ -1,4 +1,9 @@
-# 이민석a
+# 이민석
+[5월 11일]
+### useEffect 주의점
+async-await 문을 쓰는 함수가 useEffect에 포함되어 있으면,   
+함수를 따로 빼서 정의하고 useEffect에서 함수를 실행시켜야 한다.
+
 [5월 4일]   
 ### Profile.js 코드 추가
 
