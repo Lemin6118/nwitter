@@ -1,36 +1,36 @@
 # 이민석
-[5월 25일]
-### 사진추가
+### [5월 25일]
+사진추가   
 accept - type file일 경우만 사용가능   
 FileReader - new 키워드와 함께 사용   
 readAsDataURL - 생명주기 함수처럼 파일 선택 수 인식시점~끝나는시점까지 관리해야함
 
-[5월 11일]
-### useEffect 주의점
+### [5월 11일]
+useEffect 주의점   
 async-await 문을 쓰는 함수가 useEffect에 포함되어 있으면,   
 함수를 따로 빼서 정의하고 useEffect에서 함수를 실행시켜야 한다.
 
-[5월 4일]   
-### Profile.js 코드 추가
+### [5월 4일]   
+Profile.js 코드 추가
 
-### Home.js 코드 추가
-home 접근 시 보이는 부분에 대하여 코드 추가
-### Navigation 추가
+Home.js 코드 추가   
+home 접근 시 보이는 부분에 대하여 코드 추가   
+
+Navigation 추가   
 routes 폴더에 Navigation.js 파일 생성 및 router.js에 export 처리
     
     
-[4월 27일]   
-
-### 로컬 유의사항
+### [4월 27일]   
+로컬 유의사항   
 Path 설정 및 로컬 설정 확인 후 작업 할 것   
 
-### 회원가입 firebase 연동
+회원가입 firebase 연동   
 setNewAccount()   
 
-### useEffect
+useEffect   
 파이어베이스 로그인 정보를 받게 되었을 때, 실행되는 함수   
 
-### 딜레이 
+딜레이   
 setInterval()   
 
 [4월 14일]
