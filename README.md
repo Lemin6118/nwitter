@@ -1,4 +1,8 @@
 # 이민석
+[5월 25일]
+### getNweets map 
+nweet와 nweets 구분 후 id 추가
+
 [5월 11일]
 ### useEffect 주의점
 async-await 문을 쓰는 함수가 useEffect에 포함되어 있으면,   
