@@ -75,10 +75,12 @@ const Home = ({userObj}) => {
                 maxLength = {120}></input>
             <input type="file" accept="image/*" onChange={onFileChange}></input>
             <input type="submit" value="Nweet"></input>
-            <div>
-            {attachment && <img src={attachment} width="50px" height="50px"></img>}
-            <button onClick={onClearAttachment}>삭제</button>
-            </div>
+            {attachment && (
+                <div>
+                    <img src={attachment} width="50px" height="50px"></img>
+                    <button onClick={onClearAttachment}>삭제</button>
+                </div>
+            )}
         </form>
         <div>
             {nweets.map((nweet) => (
