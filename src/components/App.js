@@ -7,13 +7,13 @@ function App() {
   const [init, setInit] = useState(false);
   // const [isLoggedIn, setIsLoggedIn] = useState(authService.currentUser);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userObj, setUserObj] = useState(null);
   useEffect(() => {
     authService.onAuthStateChanged((user) => {
       if (user){
-        console.log("user")
         setIsLoggedIn(user);
+        setUserObj(user);
       }else{
-        console.log("false")
         setIsLoggedIn(false);
       }
       setInit(true);
@@ -23,7 +23,10 @@ function App() {
     
   return (
     <>
-      {init ? <AppRouter isLoggedIn={isLoggedIn}/> : "initializing..."}
+      {init ? (<AppRouter isLoggedIn={isLoggedIn} userObj={userObj}/>
+      ) : (
+        "initializing..."
+      ) }
       <footer>&copy; {new Date().getFullYear()} Nwitter</footer>
     </>
   );

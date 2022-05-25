@@ -1,30 +1,38 @@
 import { useEffect, useState } from "react";
-import { dbService } from "fbase";
+import { dbService, onSnapshot } from "fbase";
 
-const Home = () => {
+const Home = ({userObj}) => {
     const [nweet, setNweet] = useState("");
     const [nweets, setNweets] = useState([]);
     
-    const getNweets = async() => {
-        const dbNweets = await dbService.collection("nweets").get();
-        dbNweets.forEach((document) =>{
-            const nweetObject = {...document.data(), id: document.id}
-            console.log(nweetObject);
+    // const getNweets = async() => {
+    //     const dbNweets = await dbService.collection("nweets").get();
+    //     dbNweets.forEach((document) =>{
+    //         const nweetObject = {...document.data(), id: document.id}
+    //         console.log(nweetObject);
             
-            setNweets((prev) => [nweetObject, ...prev])
-        });
-    };
+    //         setNweets((prev) => [nweetObject, ...prev])
+    //     });
+    // };
 
     useEffect(() =>{
-        getNweets();
+        // getNweets();
+        onSnapshot(dbService.collection("nweets"), (snapshot) => {
+            const newArray = snapshot.docs.map((document) = ({
+                id : document.id,
+                ...document.data(),
+            }));
+            setNweets(newArray);
+        });
     },[]);
     
     const onSubmit = async (event) =>{
         event.preventDefault();
 
         await dbService.collection("nweets").add({
-            text: nweet,
-            createAt: Date.now(),
+            text     : nweet,
+            createAt : Date.now(),
+            createId : userObj.uid,
         });
         setNweet("");
     };
