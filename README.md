@@ -1,7 +1,9 @@
 # 이민석
 [5월 25일]
-### getNweets map 
-nweet와 nweets 구분 후 id 추가
+### 사진추가
+accept - type file일 경우만 사용가능   
+FileReader - new 키워드와 함께 사용   
+readAsDataURL - 생명주기 함수처럼 파일 선택 수 인식시점~끝나는시점까지 관리해야함
 
 [5월 11일]
 ### useEffect 주의점

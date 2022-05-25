@@ -1,30 +1,31 @@
 import { useEffect, useState } from "react";
-import { dbService, onSnapshot } from "fbase";
+import { dbService } from "fbase";
+import Nweet from "components/Nweets";
 
 const Home = ({userObj}) => {
     const [nweet, setNweet] = useState("");
     const [nweets, setNweets] = useState([]);
     
-    // const getNweets = async() => {
-    //     const dbNweets = await dbService.collection("nweets").get();
-    //     dbNweets.forEach((document) =>{
-    //         const nweetObject = {...document.data(), id: document.id}
-    //         console.log(nweetObject);
+    const getNweets = async() => {
+        const dbNweets = await dbService.collection("nweets").get();
+        dbNweets.forEach((document) =>{
+            const nweetObject = {...document.data(), id: document.id}
+            console.log(nweetObject);
             
-    //         setNweets((prev) => [nweetObject, ...prev])
-    //     });
-    // };
-
-    useEffect(() =>{
-        // getNweets();
-        onSnapshot(dbService.collection("nweets"), (snapshot) => {
-            const newArray = snapshot.docs.map((document) = ({
-                id : document.id,
-                ...document.data(),
-            }));
-            setNweets(newArray);
+            setNweets((prev) => [nweetObject, ...prev])
         });
-    },[]);
+        console.log(document);
+    };
+
+    useEffect(() => {
+        dbService.collection("nweets").onSnapshot((snapshot) => {
+          const newArray = snapshot.docs.map((document) => ({
+            id: document.id,
+            ...document.data()
+          }))
+          setNweets(newArray)
+        })
+      }, [])
     
     const onSubmit = async (event) =>{
         event.preventDefault();
@@ -57,9 +58,10 @@ const Home = ({userObj}) => {
         </form>
         <div>
             {nweets.map((nweet) => (
-                <div key={nweet.id}>
-                    <h4>{nweet.text}</h4>
-                </div>
+                <Nweet 
+                    key={nweet.id} 
+                    nweetObj={nweet} 
+                    isOwner={nweet.createId == userObj.uid}></Nweet>
             ))}
         </div>
             
