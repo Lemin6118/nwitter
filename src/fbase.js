@@ -6,6 +6,7 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+import 'firebase/compat/storage'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -28,3 +29,4 @@ export const collection = firebase.firestore();
 export const onSnapshot = firebase.firestore();
 export const doc = firebase.firestore();
 export const addDoc = firebase.firestore();
+export const storageService = firebase.storage();

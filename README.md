@@ -1,4 +1,11 @@
 # 이민석
+
+### [6월 14일]
+refreshUser를 AppRouter 와 연동     
+NweetFactory 사용   
+길호브로 Nweetter 호스팅하기   
+
+
 ### [5월 25일]
 사진추가   
 accept - type file일 경우만 사용가능   
